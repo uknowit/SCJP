@@ -2,6 +2,10 @@ package com.shashi.java.certificate;
 
 import java.util.List;
 
+import javax.print.attribute.standard.MediaSize.Other;
+
+import com.shashi.java.other.OtherSubClass;
+
 public class Sample {
 	public int m_pub_var = 12;
 	public static final int FINAL_VAR = 14;
@@ -20,6 +24,8 @@ public class Sample {
 		Sample m_sample = new Sample();
 		Sample sample_sub = new Sample_Subclass();
 		sample_sub.printAccessFunction();
+		OtherSubClass o_Obj = new OtherSubClass();
+		o_Obj.packageAccess();
 		System.out.println(m_sample.protected_str);
 	}
 }
